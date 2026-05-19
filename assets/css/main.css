@@ -3824,6 +3824,7 @@ input, select, textarea {
 
 			#footer .copyright li:first-child {
 				border-left: 0;
+				color: rgba(244, 244, 255, 0.72);
 				margin-left: 0;
 				padding-left: 0;
 			}
