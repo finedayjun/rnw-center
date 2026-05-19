@@ -2210,10 +2210,48 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.main.subpage-hero {
+			height: 18em;
+			overflow: hidden;
+		}
+
+			.image.main.subpage-hero img {
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+
+	.therapist-heading {
+		align-items: center;
+		display: flex;
+		gap: 1em;
+		justify-content: space-between;
+		margin: 0 0 1em 0;
+	}
+
+		.therapist-heading h2 {
+			margin: 0;
+		}
+
+		.therapist-heading img {
+			flex: 0 0 auto;
+			height: 4.75em;
+			width: 4.75em;
+		}
+
 			@media screen and (max-width: 736px) {
 
 				.image.main {
 					margin: 1.5em 0;
+				}
+
+				.image.main.subpage-hero {
+					height: 12em;
+				}
+
+				.therapist-heading img {
+					height: 3.75em;
+					width: 3.75em;
 				}
 
 			}
@@ -3651,6 +3689,11 @@ input, select, textarea {
 				padding: 0;
 			}
 
+				#contact > .inner > .split:only-child {
+					border-right: 0;
+					width: 100%;
+				}
+
 				#contact > .inner > .split > * {
 					padding: 3em 0 1em 3em ;
 					position: relative;
@@ -3687,6 +3730,10 @@ input, select, textarea {
 					width: 100%;
 				}
 
+				#contact > .inner > .split:only-child {
+					padding: 0;
+				}
+
 				#contact > .inner > .split > * {
 					padding: 3em 0 1em 0 ;
 				}
@@ -3701,6 +3748,10 @@ input, select, textarea {
 
 			#contact > .inner > :nth-child(2n - 1) {
 				padding: 3em 0 1em 0 ;
+			}
+
+			#contact > .inner > .split:only-child {
+				padding: 0;
 			}
 
 		}

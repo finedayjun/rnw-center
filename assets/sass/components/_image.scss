@@ -55,8 +55,48 @@
 				width: 100%;
 			}
 
+			&.subpage-hero {
+				height: 18em;
+				overflow: hidden;
+
+				img {
+					height: 100%;
+					object-fit: cover;
+					object-position: center center;
+				}
+			}
+
 			@include breakpoint('<=small') {
 				margin: (_size(element-margin) * 0.75) 0;
+
+				&.subpage-hero {
+					height: 12em;
+				}
+			}
+		}
+	}
+
+	.therapist-heading {
+		align-items: center;
+		display: flex;
+		gap: 1em;
+		justify-content: space-between;
+		margin: 0 0 1em 0;
+
+		h2 {
+			margin: 0;
+		}
+
+		img {
+			flex: 0 0 auto;
+			height: 4.75em;
+			width: 4.75em;
+		}
+
+		@include breakpoint('<=small') {
+			img {
+				height: 3.75em;
+				width: 3.75em;
 			}
 		}
 	}

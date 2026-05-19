@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+	<title id="title">여성 상담사 일러스트</title>
+	<desc id="desc">차분한 표정의 여성 상담사 상반신 일러스트</desc>
+	<circle cx="90" cy="90" r="84" fill="#8ea9e8" opacity="0.18"/>
+	<path d="M52 154c5-32 24-50 38-50s33 18 38 50z" fill="#ffffff" opacity="0.95"/>
+	<path d="M58 154c3-22 15-36 32-36s29 14 32 36z" fill="#6fc3df"/>
+	<path d="M60 78c0-27 17-47 31-47 22 0 39 18 39 45 0 25-12 45-35 45S60 103 60 78z" fill="#2a2f4a"/>
+	<path d="M65 83c-4-2-8 2-7 8 1 7 6 11 10 9zm50 0c4-2 8 2 7 8-1 7-6 11-10 9z" fill="#f2c8b5"/>
+	<path d="M66 75c0-18 11-33 27-33s27 15 27 33v14c0 22-12 38-27 38S66 111 66 89z" fill="#f2c8b5"/>
+	<path d="M70 70c9-2 21-9 28-18 5 10 12 16 22 19-2-19-12-33-28-33-15 0-25 13-22 32z" fill="#2a2f4a"/>
+	<path d="M78 89c3-4 8-4 11 0" fill="none" stroke="#2a2f4a" stroke-width="3" stroke-linecap="round"/>
+	<path d="M98 89c3-4 8-4 11 0" fill="none" stroke="#2a2f4a" stroke-width="3" stroke-linecap="round"/>
+	<path d="M83 108c7 6 15 6 22 0" fill="none" stroke="#b86f67" stroke-width="3" stroke-linecap="round"/>
+	<path d="M80 128l13 13 13-13" fill="#ffffff"/>
+	<path d="M54 154h72" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+</svg>
