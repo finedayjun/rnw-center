@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Naver Blog">
+  <path fill="#242943" d="M12 10h10.2v44H12z"/>
+  <path fill="#242943" fill-rule="evenodd" d="M21.2 24.6c3.5-4 8.4-6.4 14-6.4 10.8 0 19.2 8.1 19.2 18.2S46 54.6 35.2 54.6c-5.6 0-10.5-2.4-14-6.4V24.6Zm14.2 20.7c5.2 0 9-3.8 9-8.9s-3.8-8.9-9-8.9-9 3.8-9 8.9 3.8 8.9 9 8.9Z"/>
+  <path fill="#242943" d="M56.5 10H62v44h-5.5z"/>
+</svg>
