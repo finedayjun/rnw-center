@@ -2154,6 +2154,26 @@ input, select, textarea {
 			width: 2em;
 		}
 
+		.icon.alt.blog-icon {
+			background-color: #ffffff;
+			border-radius: 100%;
+			display: inline-flex;
+			height: 2em;
+			align-items: center;
+			justify-content: center;
+			width: 2em;
+		}
+
+			.icon.alt.blog-icon:before {
+				content: none;
+			}
+
+			.icon.alt.blog-icon img {
+				display: block;
+				height: 1.48em;
+				width: 1.48em;
+			}
+
 	a.icon.alt:before {
 		-moz-transition: background-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out;
@@ -3762,6 +3782,49 @@ input, select, textarea {
 					display: none;
 				}
 
+				#contact > .inner > .split.contact-grid {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					width: 100%;
+				}
+
+					#contact > .inner > .split.contact-grid > * {
+						padding: 3em 3em 1em 3em ;
+					}
+
+						#contact > .inner > .split.contact-grid > *:before {
+							left: 3em;
+							margin-left: 0;
+							right: 3em;
+							width: auto;
+						}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n + 1):before {
+						right: 0;
+					}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n):before {
+						left: 0;
+					}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n) {
+						border-left: 0;
+					}
+
+						#contact > .inner > .split.contact-grid > :nth-child(2n):after {
+							border-left: solid 1px rgba(212, 212, 255, 0.1);
+							bottom: 2em;
+							content: '';
+							display: block;
+							left: 0;
+							position: absolute;
+							top: 2em;
+						}
+
+					#contact > .inner > .split.contact-grid > :nth-child(-n + 2):before {
+						display: none;
+					}
+
 		@media screen and (max-width: 980px) {
 
 			#contact > .inner {
@@ -3791,6 +3854,34 @@ input, select, textarea {
 					display: block;
 				}
 
+				#contact > .inner > .split.contact-grid {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+
+					#contact > .inner > .split.contact-grid > * {
+						padding: 3em 2em 1em 2em ;
+					}
+
+						#contact > .inner > .split.contact-grid > *:before {
+							left: 2em;
+							margin-left: 0;
+							right: 2em;
+							width: auto;
+						}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n + 1):before {
+						right: 0;
+					}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n):before {
+						left: 0;
+					}
+
+					#contact > .inner > .split.contact-grid > :nth-child(-n + 2):before {
+						display: none;
+					}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3802,6 +3893,40 @@ input, select, textarea {
 			#contact > .inner > .split:only-child {
 				padding: 0;
 			}
+
+			#contact > .inner > .split.contact-grid {
+				display: block;
+			}
+
+				#contact > .inner > .split.contact-grid > * {
+					border-left: 0;
+					padding: 3em 0 1em 0 ;
+				}
+
+					#contact > .inner > .split.contact-grid > *:before {
+						left: 0;
+						margin-left: 0;
+						right: auto;
+						width: 100vw;
+					}
+
+					#contact > .inner > .split.contact-grid > :nth-child(2n + 1):before,
+					#contact > .inner > .split.contact-grid > :nth-child(2n):before {
+						left: 0;
+						right: auto;
+					}
+
+					#contact > .inner > .split.contact-grid > *:after {
+						display: none !important;
+					}
+
+				#contact > .inner > .split.contact-grid > :first-child:before {
+					display: block;
+				}
+
+				#contact > .inner > .split.contact-grid > :nth-child(-n + 2):before {
+					display: block;
+				}
 
 		}
 
