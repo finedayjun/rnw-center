@@ -3474,6 +3474,25 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+		#banner .banner-logo-mark {
+			-moz-filter: grayscale(1) brightness(0) invert(1);
+			-webkit-filter: grayscale(1) brightness(0) invert(1);
+			-ms-filter: grayscale(1) brightness(0) invert(1);
+			filter: grayscale(1) brightness(0) invert(1);
+			height: min(72vh, 38em);
+			opacity: 0.13;
+			pointer-events: none;
+			position: absolute;
+			right: 7vw;
+			top: 50%;
+			-moz-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: auto;
+			z-index: 2;
+		}
+
 		#banner h1 {
 			font-size: 3.25em;
 		}
@@ -3485,7 +3504,7 @@ input, select, textarea {
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
+			z-index: 3;
 		}
 
 			#banner > .inner .image {
@@ -3605,6 +3624,21 @@ input, select, textarea {
 					font-size: 2em;
 				}
 
+				#banner .banner-logo-mark {
+					height: auto;
+					left: 50%;
+					max-height: 46vh;
+					max-width: 58vw;
+					opacity: 0.1;
+					right: auto;
+					top: 46%;
+					-moz-transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					width: 58vw;
+				}
+
 				#banner > .inner .content {
 					display: block;
 				}
@@ -3616,7 +3650,7 @@ input, select, textarea {
 
 				#banner.major {
 					height: auto;
-					min-height: 0;
+					min-height: 28em;
 					max-height: none;
 				}
 
@@ -3634,6 +3668,7 @@ input, select, textarea {
 
 				#banner.major {
 					padding: 8em 0 4em 0 ;
+					min-height: 30em;
 				}
 
 		}
