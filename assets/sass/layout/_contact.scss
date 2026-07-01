@@ -1,0 +1,235 @@
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Contact */
+
+	#contact {
+		border-bottom: solid 1px _palette(border);
+		overflow-x: hidden;
+
+		> .inner {
+			@include vendor('display', 'flex');
+			padding: 0 !important;
+
+			> :nth-child(2n - 1) {
+				@include padding(4em, 0, (0, 3em, 0, 0));
+				border-right: solid 1px _palette(border);
+				width: 60%;
+			}
+
+			> :nth-child(2n) {
+				padding-left: 3em;
+				width: 40%;
+			}
+
+			> .split {
+				padding: 0;
+
+				&:only-child {
+					border-right: 0;
+					width: 100%;
+				}
+
+				> * {
+					@include padding(3em, 0, (0, 0, 0, 3em));
+					position: relative;
+
+					&:before {
+						border-top: solid 1px _palette(border);
+						content: '';
+						display: block;
+						margin-left: -3em;
+						position: absolute;
+						top: 0;
+						width: calc(100vw + 3em);
+					}
+				}
+
+				> :first-child {
+					&:before {
+						display: none;
+					}
+				}
+
+				&.contact-grid {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					width: 100%;
+
+					> * {
+						@include padding(3em, 0, (0, 3em, 0, 3em));
+
+						&:before {
+							left: 3em;
+							margin-left: 0;
+							right: 3em;
+							width: auto;
+						}
+					}
+
+					> :nth-child(2n + 1) {
+						&:before {
+							right: 0;
+						}
+					}
+
+					> :nth-child(2n) {
+						&:before {
+							left: 0;
+						}
+					}
+
+					> :nth-child(2n) {
+						border-left: 0;
+
+						&:after {
+							border-left: solid 1px _palette(border);
+							bottom: 2em;
+							content: '';
+							display: block;
+							left: 0;
+							position: absolute;
+							top: 2em;
+						}
+					}
+
+					> :nth-child(-n + 2) {
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			> .inner {
+				display: block;
+
+				> :nth-child(2n - 1) {
+					@include padding(4em, 0, (0, 0, 0, 0));
+					border-right: 0;
+					width: 100%;
+				}
+
+				> :nth-child(2n) {
+					padding-left: 0;
+					width: 100%;
+				}
+
+				> .split {
+					&:only-child {
+						padding: 0;
+					}
+
+					> * {
+						@include padding(3em, 0, (0, 0, 0, 0));
+
+						&:before {
+						}
+					}
+
+					> :first-child {
+						&:before {
+							display: block;
+						}
+					}
+
+					&.contact-grid {
+						display: grid;
+						grid-template-columns: repeat(2, minmax(0, 1fr));
+
+						> * {
+							@include padding(3em, 0, (0, 2em, 0, 2em));
+
+							&:before {
+								left: 2em;
+								margin-left: 0;
+								right: 2em;
+								width: auto;
+							}
+						}
+
+						> :nth-child(2n + 1) {
+							&:before {
+								right: 0;
+							}
+						}
+
+						> :nth-child(2n) {
+							&:before {
+								left: 0;
+							}
+						}
+
+						> :nth-child(-n + 2) {
+							&:before {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> .inner {
+				> :nth-child(2n - 1) {
+					@include padding(3em, 0, (0, 0, 0, 0));
+				}
+
+				> .split {
+					&:only-child {
+						padding: 0;
+					}
+
+					&.contact-grid {
+						display: block;
+
+						> * {
+							border-left: 0;
+							@include padding(3em, 0, (0, 0, 0, 0));
+
+							&:before {
+								left: 0;
+								margin-left: 0;
+								right: auto;
+								width: 100vw;
+							}
+
+							&:after {
+								display: none !important;
+							}
+						}
+
+						> :nth-child(2n + 1),
+						> :nth-child(2n) {
+							&:before {
+								left: 0;
+								right: auto;
+							}
+
+							&:after {
+								display: none !important;
+							}
+						}
+
+						> :first-child {
+							&:before {
+								display: block;
+							}
+						}
+
+						> :nth-child(-n + 2) {
+							&:before {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

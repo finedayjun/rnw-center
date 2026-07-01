@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+
+# Local editor state
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Common build output, if tooling is added later
+node_modules/
+dist/
+build/
+out/
+coverage/
