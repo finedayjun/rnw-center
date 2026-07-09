@@ -28,7 +28,7 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			background: linear-gradient(105deg, rgba(255,255,255,0.95), rgba(238,250,247,0.88));
 			content: '';
 			display: block;
 			height: 100%;
@@ -41,9 +41,9 @@
 		}
 
 		.banner-logo-mark {
-			@include vendor('filter', 'grayscale(1) brightness(0) invert(1)');
+			@include vendor('filter', 'none');
 			height: min(72vh, 38em);
-			opacity: 0.13;
+			opacity: 0.14;
 			pointer-events: none;
 			position: absolute;
 			right: 7vw;
@@ -157,7 +157,7 @@
 				left: 50%;
 				max-height: 46vh;
 				max-width: 58vw;
-				opacity: 0.1;
+				opacity: 0.14;
 				right: auto;
 				top: 46%;
 				@include vendor('transform', 'translate(-50%, -50%)');

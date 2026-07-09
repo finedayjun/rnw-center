@@ -26,6 +26,10 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+
+				&:not(:first-child) {
+					color: rgba(20,42,47,0.16);
+				}
 			}
 		}
 

@@ -44,24 +44,28 @@
 			}
 
 			&.blog-icon {
+				align-items: center;
 				background-color: _palette(fg-bold);
 				border-radius: 100%;
 				display: inline-flex;
 				height: 2em;
-				align-items: center;
 				justify-content: center;
 				width: 2em;
 
 				&:before {
 					content: none;
+					display: none;
 				}
 
 				img {
 					display: block;
+					filter: brightness(0) saturate(100%) invert(35%) sepia(25%) saturate(1131%) hue-rotate(130deg) brightness(93%) contrast(88%);
 					height: 1.48em;
+					opacity: 0.9;
 					width: 1.48em;
 				}
 			}
+
 		}
 	}
 
